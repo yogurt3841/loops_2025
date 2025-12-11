@@ -102,7 +102,10 @@ print(car_price(6)) #output
 
 def fibonacci(n):
      
-    if n==1 in [1,2]:
+    if n==1:
+     return 0
+    
+    if n==2:
      return 1
 
      return fibonacci(n-1)+ fibonacci(n-2)

@@ -17,14 +17,21 @@ for number in list1to10:
 # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
 n= int(input("Enter a number:"))
 total_sum= 0
-for number in range(1, n + 1)
-total_sum+= number
+for number in range(1, n + 1):
+    total_sum += number
 print("The sum of numbers from 1 to ",n,"is:", total_sum)
 
 # ### **Problem 3: Factorial Calculator
 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
+def factorial(n):
+ 
+        factorial=1 
 
+        for i in range(n):
+            factorial*= i+1
+        return factorial
+print(factorial(6))
 # *(Example: factorial of 5 is 120)
 
 
@@ -36,13 +43,32 @@ print("The sum of numbers from 1 to ",n,"is:", total_sum)
 # ### **Problem 5: Print Even Numbers**
 
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+n =int(input("Enter a number:"))
+print("EVen numbers from 2 to", n, ":")
+for number in range(2, n+ 1, 2):
+     print(number)
 
-
+list_even_number= list(range(1, 45))
+for number in list_even_number:
+     #If number is even, print it
+     if number  % 2 == 0:
+          print("even number", number)
+     else: 
+          print("odd number, skipping", number)
 
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
-
+name= input("Enter a string: ")
+reversed_name = "Allyson"
+for char in name:
+     #What is going on here?
+     # What are we looping through each character in the string
+     # and adding it yo the front of the reversed_name
+     reversed_name= char + reversed_name
+     #prepend each character to reversed_name
+print("Reversed string:", reversed_name)
+print(reversed_name[::-1]) #alternative method using slicing
 
 
 # ### **Problem 7: Multiplication Table**
